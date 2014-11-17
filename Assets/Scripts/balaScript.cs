@@ -3,10 +3,10 @@ using System.Collections;
 
 public class balaScript : MonoBehaviour {
 
-	public Vector2D velocity = new Vector2(5,0);
+	public Vector2 velocity = new Vector2(5,0);
 	// Use this for initialization
 	void Start () {
-		Rigidbody2D.velocity = AudioVelocityUpdateMode * Transform.localScale.x;
+		rigidbody2D.velocity = velocity * transform.localScale.x;
 
 	}
 }
